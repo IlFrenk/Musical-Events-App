@@ -7,7 +7,7 @@
   <body>
     <div class="center">
         <h1>Homepage</h1>
-        <h2>in questa pagina ci vanno i bottoni SIGNUP/LOGIN</h2>
+        <h2>Registrati o effettua il login</h2>
 
         <button onclick="login()">Login</button>
         <button onclick="register()">Registrati</button>
@@ -15,10 +15,10 @@
 
     <script>
       function login() {
-        alert('Hello world');
+        <%- partial ('login.ejs') %>
       }
       function register(){
-        return res.view(/signup);
+        <%- partial ('signup.ejs') %>
       }
     </script>
   </body>
