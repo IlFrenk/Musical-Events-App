@@ -9,17 +9,12 @@
         <h1>Homepage</h1>
         <h2>Registrati o effettua il login</h2>
 
-        <button onclick="login()">Login</button>
-        <button onclick="register()">Registrati</button>
+        <button onclick="window.location.href='login';">Login</button>
+        <button onclick="window.location.href='signup';">Registrati</button>
     </div>
 
     <script>
-      function login() {
-        <%- partial ('login.ejs') %>
-      }
-      function register(){
-        <%- partial ('signup.ejs') %>
-      }
+
     </script>
   </body>
 </html>
