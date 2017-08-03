@@ -1,7 +1,22 @@
 {
   "data": {
     "post": [],
-    "user": []
+    "user": [
+      {
+        "email": "ciao.ggg@hotmail.com",
+        "password": "$2a$10$C7vOcPKJoeSTXLv2o5Zps.uw4UTF.Kkl9IxxCDbjisFyOR.d1EAM2",
+        "createdAt": "2017-08-03T17:43:31.500Z",
+        "updatedAt": "2017-08-03T17:43:31.500Z",
+        "id": 1
+      },
+      {
+        "email": "utente2@gmail.com",
+        "password": "$2a$10$3ZL2dcFpZP1oM9gx5tTCSOmQIgI9HFN6HLLzG/sY6VQSW2u6vXYpi",
+        "createdAt": "2017-08-03T17:49:07.969Z",
+        "updatedAt": "2017-08-03T17:49:07.969Z",
+        "id": 2
+      }
+    ]
   },
   "schema": {
     "post": {
@@ -42,6 +57,8 @@
   },
   "counters": {
     "post": {},
-    "user": {}
+    "user": {
+      "id": 2
+    }
   }
 }

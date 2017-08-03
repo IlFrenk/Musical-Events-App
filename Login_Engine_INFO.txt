@@ -1,0 +1,9 @@
+http://localhost:1337/post - è la pagina da accedere. La prima volta che la si prova ad accedere (senza aver effettuato il login), si viene reindirizzati a http://localhost:1337/login
+
+http://localhost:1337/signup è per registrarsi
+
+http://localhost:1337/login è per loggare
+
+dopo aver loggato, si può accedere http://localhost:1337/post, anche se per ora contiene un array vuoto (non vi è stato inserito nulla)
+
+http://localhost:1337/logout è per il logout. Dopo aver sloggato, http://localhost:1337/post non sarà più accessibile finché non si rieffettua il login
