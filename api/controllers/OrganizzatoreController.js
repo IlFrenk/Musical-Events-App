@@ -1,7 +1,7 @@
 /**
- * PostController
+ * OrganizzatoreController
  *
- * @description :: Server-side logic for managing posts
+ * @description :: Server-side logic for managing organizzatores
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 

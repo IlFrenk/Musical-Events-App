@@ -1,20 +1,102 @@
 {
   "data": {
     "post": [],
-    "user": [
+    "eventi": [
       {
-        "email": "ciao.ggg@hotmail.com",
-        "password": "$2a$10$C7vOcPKJoeSTXLv2o5Zps.uw4UTF.Kkl9IxxCDbjisFyOR.d1EAM2",
-        "createdAt": "2017-08-03T17:43:31.500Z",
-        "updatedAt": "2017-08-03T17:43:31.500Z",
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "1605-11-05T00:00:00.000Z",
+        "prezzo": 20,
+        "createdAt": "2017-08-09T20:02:08.264Z",
+        "updatedAt": "2017-08-09T20:02:08.264Z",
         "id": 1
       },
       {
-        "email": "utente2@gmail.com",
-        "password": "$2a$10$3ZL2dcFpZP1oM9gx5tTCSOmQIgI9HFN6HLLzG/sY6VQSW2u6vXYpi",
-        "createdAt": "2017-08-03T17:49:07.969Z",
-        "updatedAt": "2017-08-03T17:49:07.969Z",
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "2017-10-06T22:00:00.000Z",
+        "prezzo": 20,
+        "createdAt": "2017-08-09T20:04:02.348Z",
+        "updatedAt": "2017-08-09T20:04:02.348Z",
         "id": 2
+      },
+      {
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "2001-10-16T22:00:00.000Z",
+        "prezzo": 20,
+        "createdAt": "2017-08-09T20:04:21.126Z",
+        "updatedAt": "2017-08-09T20:04:21.126Z",
+        "id": 3
+      },
+      {
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "2001-10-16T22:00:00.000Z",
+        "prezzo": 20,
+        "createdAt": "2017-08-09T20:05:50.603Z",
+        "updatedAt": "2017-08-09T20:05:50.603Z",
+        "id": 4
+      },
+      {
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "2001-10-16T22:00:00.000Z",
+        "prezzo": 20,
+        "createdAt": "2017-08-09T20:06:00.930Z",
+        "updatedAt": "2017-08-09T20:06:00.930Z",
+        "id": 5
+      },
+      {
+        "artista": "Einaudi",
+        "luogo": "Roma",
+        "data": "2001-10-16T22:00:00.000Z",
+        "prezzo": 22.89,
+        "createdAt": "2017-08-09T20:06:09.805Z",
+        "updatedAt": "2017-08-09T20:06:09.805Z",
+        "id": 6
+      }
+    ],
+    "organizzatore": [
+      {
+        "nome": "organizzatore",
+        "cognome": "uno",
+        "email": "non@so.it",
+        "password": "$2a$10$aK0QqC51u1kgeNulGObv6egP99CoN/lEFm4kNtPFXDp3.aV1wje46",
+        "company": "ticket italy",
+        "createdAt": "2017-08-07T15:43:03.370Z",
+        "updatedAt": "2017-08-07T15:43:03.370Z",
+        "id": 1
+      },
+      {
+        "nome": "andr",
+        "cognome": "castells",
+        "email": "andr@castells.it",
+        "password": "$2a$10$U.9lxU9Ta5tXhHEfFbiv/e3Kd.HK0tKY3TfqqouCSOrQarDc9i/3C",
+        "company": "si",
+        "createdAt": "2017-08-07T19:57:17.742Z",
+        "updatedAt": "2017-08-07T19:57:17.742Z",
+        "id": 2
+      }
+    ],
+    "user": [
+      {
+        "nome": "utente",
+        "cognome": "uno",
+        "email": "miao@bau.it",
+        "password": "$2a$10$JxzaKGSRXYjKfXaivWlILuCKDAqfyQ2iOpDVsJh2KmNL6//Zl4xO2",
+        "createdAt": "2017-08-07T15:42:31.733Z",
+        "updatedAt": "2017-08-07T15:42:31.733Z",
+        "id": 2
+      },
+      {
+        "nome": "francesc",
+        "cognome": "grad",
+        "email": "franc@grad.it",
+        "password": "$2a$10$0.D73Lp/mU0y2NZAtH1IbO/ILQaIr2hKQghZ4C8yF8B5uNkmD1baa",
+        "createdAt": "2017-08-07T19:56:30.881Z",
+        "updatedAt": "2017-08-07T19:56:30.881Z",
+        "id": 3
       }
     ]
   },
@@ -33,7 +115,69 @@
         "type": "datetime"
       }
     },
+    "eventi": {
+      "artista": {
+        "type": "string"
+      },
+      "luogo": {
+        "type": "string"
+      },
+      "data": {
+        "type": "date"
+      },
+      "prezzo": {
+        "type": "float"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "organizzatore": {
+      "nome": {
+        "type": "string"
+      },
+      "cognome": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "company": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
     "user": {
+      "nome": {
+        "type": "string"
+      },
+      "cognome": {
+        "type": "string"
+      },
       "email": {
         "type": "string",
         "unique": true
@@ -58,7 +202,13 @@
   "counters": {
     "post": {},
     "user": {
+      "id": 3
+    },
+    "organizzatore": {
       "id": 2
+    },
+    "eventi": {
+      "id": 6
     }
   }
 }

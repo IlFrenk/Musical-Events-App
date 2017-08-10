@@ -41,3 +41,33 @@ passport.use(new LocalStrategy({
     });
   }
 ));
+
+passport.use('orgStrat', new LocalStrategy({
+    usernameField: 'email',
+    passwordField: 'password'
+  },
+  function(email, password, done) {
+
+    Organizzatore.findOne({ email: email }, function (err, org) {
+      if (err) { return done(err); }
+      if (!org) {
+        return done(null, false, { message: 'Incorrect email.' });
+      }
+
+      bcrypt.compare(password, org.password, function (err, res) {
+          if (!res)
+            return done(null, false, {
+              message: 'Invalid Password'
+            });
+          var returnOrg = {
+            email: org.email,
+            createdAt: org.createdAt,
+            id: org.id
+          };
+          return done(null, returnOrg, {
+            message: 'Logged In Successfully'
+          });
+        });
+    });
+  }
+));

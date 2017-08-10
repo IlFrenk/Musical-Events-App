@@ -40,12 +40,28 @@ module.exports.routes = {
        view: 'login'
   },
 
+    'get /loginOrg': {
+       view: 'loginOrg'
+  },
+
   'post /login': 'AuthController.login',
+
+  'post /loginOrg': 'AuthController.loginOrg',
 
   '/logout': 'AuthController.logout',
 
+  '/logoutOrg': 'AuthController.logoutOrg',
+
   'get /signup': {
     view: 'signup'
+  },
+
+  'get /signupOrg': {
+    view: 'signupOrg'
+  },
+
+  'get /eventi': {
+    view: 'eventi'
   }
 
   /***************************************************************************
