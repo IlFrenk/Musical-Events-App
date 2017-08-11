@@ -62,6 +62,10 @@ module.exports.routes = {
 
   'get /eventi': {
     view: 'eventi'
+  },
+
+  'get /eventi/addEvento': {
+    view: 'eventi/addEvento'
   }
 
   /***************************************************************************
