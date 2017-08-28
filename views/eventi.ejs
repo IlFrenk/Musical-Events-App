@@ -14,15 +14,17 @@
     <tr>
       <th>Artista</th>
       <th>Luogo</th>
-      <th>Data</th>
+      <th>Data e Ora</th>
       <th>Prezzo</th>
+      <td align="center" style="font-weight:bold">Azione</td>
     </tr>
     <% eventi.forEach(function(events)  { %>
-      <tr>
-        <td><%= events.artista %></td>
-        <td><%= events.luogo %></td>
-        <td><%= events.data %></td>
-        <td><%= events.prezzo %></td>
+      <tr align="center">
+        <td><hr/><%= events.artista %><hr/></td>
+        <td><hr/><%= events.luogo %><hr/></td>
+        <td><hr/><%= events.data %><hr/></td>
+        <td><hr/><%= events.prezzo %> &euro;<hr/></td>
+        <td style="display: block"><hr/><button>Prenota!</button><hr/></td>
       </tr>
     <% }); %>
   </table>

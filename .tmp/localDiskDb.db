@@ -18,6 +18,15 @@
         "createdAt": "2017-08-28T15:31:10.202Z",
         "updatedAt": "2017-08-28T15:31:10.202Z",
         "id": 2
+      },
+      {
+        "artista": "AC / DC",
+        "luogo": "Imola",
+        "data": "2020-07-20T22:00:00.000Z",
+        "prezzo": 52,
+        "createdAt": "2017-08-28T16:26:06.843Z",
+        "updatedAt": "2017-08-28T16:26:06.843Z",
+        "id": 3
       }
     ],
     "organizzatore": [
@@ -156,7 +165,7 @@
       "id": 3
     },
     "events": {
-      "id": 2
+      "id": 3
     }
   }
 }

@@ -18,11 +18,11 @@
       <th>Prezzo</th>
     </tr>
     <% eventiOrg.forEach(function(events)  { %>
-      <tr>
-        <td><%= events.artista %></td>
-        <td><%= events.luogo %></td>
-        <td><%= events.data %></td>
-        <td><%= events.prezzo %></td>
+      <tr align="center">
+        <td><%= events.artista %><hr/></td>
+        <td><%= events.luogo %><hr/></td>
+        <td><%= events.data %><hr/></td>
+        <td><%= events.prezzo %> &euro;<hr/></td>
       </tr>
     <% }); %>
   </table>
