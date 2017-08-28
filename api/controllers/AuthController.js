@@ -32,22 +32,22 @@
          })(req, res);
      },
 
-        loginOrg: function(req, res) {
+    loginOrg: function(req, res) {
 
-         passport.authenticate('orgStrat', function(err, org, info) {
-             if ((err) || (!org)) {
-                 return res.send({
-                     message: info.message,
-                     org: org
-                 });
-             }
-             req.logIn(org, function(err) {
-                 if (err) res.send(err);
-                 return res.redirect('/eventi');
+     passport.authenticate('orgStrat', function(err, org, info) {
+         if ((err) || (!org)) {
+             return res.send({
+                 message: info.message,
+                 org: org
              });
+         }
+         req.logIn(org, function(err) {
+             if (err) res.send(err);
+             return res.redirect('/eventiorg');
+         });
 
-         })(req, res);
-     },
+     })(req, res);
+   },
 
     logoutOrg: function(req, res) {
          req.logout();
@@ -57,5 +57,5 @@
      logout: function(req, res) {
          req.logout();
          res.redirect('/');
-     },
+     }
  };

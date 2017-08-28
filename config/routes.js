@@ -52,20 +52,18 @@ module.exports.routes = {
 
   '/logoutOrg': 'AuthController.logoutOrg',
 
+  '/eventi': 'EventsController.baseEvents',
+
+  '/eventiorg': 'EventsController.baseEventsOrg',
+
+  '/addEvento': 'EventsController.addEvents',
+
   'get /signup': {
     view: 'signup'
   },
 
   'get /signupOrg': {
     view: 'signupOrg'
-  },
-
-  'get /eventi': {
-    view: 'eventi'
-  },
-
-  'get /eventi/addEvento': {
-    view: 'eventi/addEvento'
   }
 
   /***************************************************************************

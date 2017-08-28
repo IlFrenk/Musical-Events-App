@@ -42,8 +42,6 @@ passport.use(new LocalStrategy({
   }
 ));
 
-
-
 passport.serializeUser(function(org, done) {
     done(null, org.id);
 });

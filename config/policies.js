@@ -37,9 +37,11 @@ module.exports.policies = {
 
   '*': true,
 
-  'EventiController': {
-    '*': 'isAuthenticated'
-  },
+  'EventsController': {
+    'baseEvents': 'isAuthenticated',
+    'baseEventsOrg': 'isAuthenticatedOrg',
+    'addEvents': 'isAuthenticatedOrg'
+  }
 
 	// RabbitController: {
 
