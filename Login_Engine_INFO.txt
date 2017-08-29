@@ -6,6 +6,6 @@ http://localhost:1337/login è per loggare (loginOrg per gli organizzatori).
 
 Dopo aver loggato, si può accedere http://localhost:1337/eventi (/eventiOrg per gli organizzatori).
 
-http://localhost:1337/addEvento è una view accessibile sono dagli organizzatori, tramite la quale posso aggiungere nel database nuovi eventi (che verranno poi visualizzati in /eventi e /eventiOrg).
+http://localhost:1337/addEvento è una view accessibile sono dagli organizzatori, tramite la quale è possibile aggiungere nel database nuovi eventi (che verranno poi visualizzati in /eventi e /eventiOrg). Questa view non è accessibile senza aver effettuato il login.
 
 http://localhost:1337/logout (/logoutOrg) è per il logout. Dopo aver sloggato, http://localhost:1337/eventi (/eventiOrg) non sarà più accessibile finché non si rieffettua il login.
