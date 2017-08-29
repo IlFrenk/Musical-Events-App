@@ -1,9 +1,11 @@
-﻿http://localhost:1337/eventi - è la pagina da accedere. La prima volta che la si prova ad accedere (senza aver effettuato il login), si viene reindirizzati a http://localhost:1337/login
+﻿http://localhost:1337/eventi (/eventiOrg per gli organizzatori di eventi) è la pagina da accedere. La prima volta che la si prova ad accedere (senza aver effettuato il login), si viene reindirizzati a http://localhost:1337/login (/loginOrg per gli organizzatori).
 
-http://localhost:1337/signup è per registrarsi (signupOrg per gli organizzatori)
+http://localhost:1337/signup è per registrarsi (signupOrg per gli organizzatori).
 
-http://localhost:1337/login è per loggare (loginOrg per gli organizzatori)
+http://localhost:1337/login è per loggare (loginOrg per gli organizzatori).
 
-dopo aver loggato, si può accedere http://localhost:1337/eventi
+Dopo aver loggato, si può accedere http://localhost:1337/eventi (/eventiOrg per gli organizzatori).
 
-http://localhost:1337/logout è per il logout. Dopo aver sloggato, http://localhost:1337/eventi non sarà più accessibile finché non si rieffettua il login
+http://localhost:1337/addEvento è una view accessibile sono dagli organizzatori. Tramite la quale posso aggiungere nel database nuovi eventi (che verranno poi visualizzati in /eventi e /eventiOrg).
+
+http://localhost:1337/logout è per il logout. Dopo aver sloggato, http://localhost:1337/eventi (/eventiOrg) non sarà più accessibile finché non si rieffettua il login.
