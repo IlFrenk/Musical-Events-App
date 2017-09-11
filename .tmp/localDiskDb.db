@@ -4,61 +4,20 @@
       {
         "artista": "Linkin Park",
         "luogo": "Roma",
-        "data": "2018-12-11T23:00:00.000Z",
-        "prezzo": 42,
-        "compagnia": "NO",
-        "createdAt": "2017-08-28T15:27:31.124Z",
-        "updatedAt": "2017-08-28T15:27:31.124Z",
-        "id": 1
-      },
-      {
-        "artista": "Coldplay",
-        "luogo": "San Siro",
-        "data": "2019-11-19T23:00:00.000Z",
-        "prezzo": 49.5,
-        "compagnia": "NO",
-        "createdAt": "2017-08-28T15:31:10.202Z",
-        "updatedAt": "2017-08-28T15:31:10.202Z",
-        "id": 2
-      },
-      {
-        "artista": "AC / DC",
-        "luogo": "Imola",
-        "data": "2020-07-20T22:00:00.000Z",
-        "prezzo": 52,
-        "compagnia": "NO",
-        "createdAt": "2017-08-28T16:26:06.843Z",
-        "updatedAt": "2017-08-28T16:26:06.843Z",
-        "id": 3
-      },
-      {
-        "artista": "no",
-        "luogo": "si",
-        "data": "2011-12-11T23:00:00.000Z",
-        "prezzo": 1212,
-        "createdAt": "2017-09-06T14:41:35.386Z",
-        "updatedAt": "2017-09-06T14:41:35.386Z",
+        "data": "2017-10-12T22:00:00.000Z",
+        "prezzo": 12.5,
+        "createdAt": "2017-08-28T14:34:11.273Z",
+        "updatedAt": "2017-08-28T14:34:11.273Z",
         "id": 4
       },
       {
-        "artista": "w",
-        "luogo": "w",
-        "data": "2017-12-09T23:00:00.000Z",
-        "prezzo": 122,
-        "compagnia": "volvo",
-        "createdAt": "2017-09-06T14:49:48.852Z",
-        "updatedAt": "2017-09-06T14:49:48.852Z",
-        "id": 5
-      },
-      {
-        "artista": "MythBusters",
+        "artista": "Einaudi",
         "luogo": "Milano",
-        "data": "2017-10-12T22:00:00.000Z",
-        "prezzo": 42,
-        "compagnia": "DMAX",
-        "createdAt": "2017-09-07T16:25:03.514Z",
-        "updatedAt": "2017-09-07T16:25:03.514Z",
-        "id": 6
+        "data": "0999-12-31T23:00:00.000Z",
+        "prezzo": 12.5,
+        "createdAt": "2017-08-28T15:06:43.952Z",
+        "updatedAt": "2017-08-28T15:06:43.952Z",
+        "id": 12
       }
     ],
     "organizzatore": [
@@ -101,11 +60,43 @@
         "createdAt": "2017-08-07T19:56:30.881Z",
         "updatedAt": "2017-08-07T19:56:30.881Z",
         "id": 3
+      },
+      {
+        "nome": "andrea",
+        "cognome": "cappe",
+        "email": "andrea.93@hotmail.it",
+        "password": "$2a$10$sUazvyr4A2Q6TFNAPJD1t.2MbbrfV8Niz/Me0Lyqx1scKFGDZr69y",
+        "createdAt": "2017-08-22T15:46:56.918Z",
+        "updatedAt": "2017-08-22T15:46:56.918Z",
+        "id": 4
+      },
+      {
+        "nome": "miao",
+        "cognome": "baau",
+        "email": "bau@miao.it",
+        "password": "$2a$10$/bwlcheEzlb8kQ7VxDEjJemBL5Vn9oUhNQZbJW.PWxlA3wf5dcPIW",
+        "createdAt": "2017-08-28T14:23:39.889Z",
+        "updatedAt": "2017-08-28T14:23:39.889Z",
+        "id": 5
       }
     ]
   },
   "schema": {
-    "events": {
+    "post": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "eventi": {
       "artista": {
         "type": "string"
       },
@@ -118,8 +109,31 @@
       "prezzo": {
         "type": "float"
       },
-      "compagnia": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "events": {
+      "artista": {
         "type": "string"
+      },
+      "luogo": {
+        "type": "string"
+      },
+      "data": {
+        "type": "date"
+      },
+      "prezzo": {
+        "type": "float"
       },
       "id": {
         "type": "integer",
@@ -193,14 +207,18 @@
     }
   },
   "counters": {
+    "post": {},
     "user": {
-      "id": 3
+      "id": 5
     },
     "organizzatore": {
-      "id": 3
+      "id": 2
+    },
+    "eventi": {
+      "id": 6
     },
     "events": {
-      "id": 6
+      "id": 14
     }
   }
 }

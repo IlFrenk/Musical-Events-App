@@ -24,7 +24,9 @@ module.exports = {
       type: 'float',
       required: true
     },
-    compagnia: 'string'
+    compagnia: {
+      type: 'string'
+    }
   }
 
 };

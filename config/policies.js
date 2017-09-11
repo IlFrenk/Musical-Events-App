@@ -38,13 +38,14 @@ module.exports.policies = {
   '*': true,
 
   'EventsController': {
-    'baseEvents': 'isAuthenticated',
+    'baseEvents' : 'isAuthenticated',
     'baseEventsOrg': 'isAuthenticatedOrg'
   },
 
   'OrganizzatoreController': {
     'orgCompany': 'isAuthenticatedOrg'
   }
+
 
 	// RabbitController: {
 
