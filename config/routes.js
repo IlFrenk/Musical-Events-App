@@ -56,7 +56,7 @@ module.exports.routes = {
 
   '/eventiorg': 'EventsController.baseEventsOrg',
 
-  '/addEvento': 'EventsController.addEvents',
+  '/addEvento': 'OrganizzatoreController.orgCompany',
 
   'get /signup': {
     view: 'signup'

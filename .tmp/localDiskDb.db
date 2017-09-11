@@ -6,6 +6,7 @@
         "luogo": "Roma",
         "data": "2018-12-11T23:00:00.000Z",
         "prezzo": 42,
+        "compagnia": "NO",
         "createdAt": "2017-08-28T15:27:31.124Z",
         "updatedAt": "2017-08-28T15:27:31.124Z",
         "id": 1
@@ -15,6 +16,7 @@
         "luogo": "San Siro",
         "data": "2019-11-19T23:00:00.000Z",
         "prezzo": 49.5,
+        "compagnia": "NO",
         "createdAt": "2017-08-28T15:31:10.202Z",
         "updatedAt": "2017-08-28T15:31:10.202Z",
         "id": 2
@@ -24,9 +26,39 @@
         "luogo": "Imola",
         "data": "2020-07-20T22:00:00.000Z",
         "prezzo": 52,
+        "compagnia": "NO",
         "createdAt": "2017-08-28T16:26:06.843Z",
         "updatedAt": "2017-08-28T16:26:06.843Z",
         "id": 3
+      },
+      {
+        "artista": "no",
+        "luogo": "si",
+        "data": "2011-12-11T23:00:00.000Z",
+        "prezzo": 1212,
+        "createdAt": "2017-09-06T14:41:35.386Z",
+        "updatedAt": "2017-09-06T14:41:35.386Z",
+        "id": 4
+      },
+      {
+        "artista": "w",
+        "luogo": "w",
+        "data": "2017-12-09T23:00:00.000Z",
+        "prezzo": 122,
+        "compagnia": "volvo",
+        "createdAt": "2017-09-06T14:49:48.852Z",
+        "updatedAt": "2017-09-06T14:49:48.852Z",
+        "id": 5
+      },
+      {
+        "artista": "MythBusters",
+        "luogo": "Milano",
+        "data": "2017-10-12T22:00:00.000Z",
+        "prezzo": 42,
+        "compagnia": "DMAX",
+        "createdAt": "2017-09-07T16:25:03.514Z",
+        "updatedAt": "2017-09-07T16:25:03.514Z",
+        "id": 6
       }
     ],
     "organizzatore": [
@@ -85,6 +117,9 @@
       },
       "prezzo": {
         "type": "float"
+      },
+      "compagnia": {
+        "type": "string"
       },
       "id": {
         "type": "integer",
@@ -165,7 +200,7 @@
       "id": 3
     },
     "events": {
-      "id": 3
+      "id": 6
     }
   }
 }

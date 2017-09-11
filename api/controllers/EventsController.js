@@ -5,7 +5,10 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
+
+
 module.exports = {
+
 
   baseEvents: (req, res) => {
       Events.find().exec( (err, events) => {
@@ -17,9 +20,5 @@ module.exports = {
       Events.find().exec( (err, events) => {
           return res.view('eventiOrg',{eventiOrg: events});
       });
-  },
-
-  addEvents: (req, res) => {
-          return res.view('addEvento');
   }
 };
