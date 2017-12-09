@@ -125,6 +125,9 @@
       "prezzo": {
         "type": "float"
       },
+      "compagnia": {
+        "type": "string"
+      },
       "id": {
         "type": "integer",
         "autoIncrement": true,
